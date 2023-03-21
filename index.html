@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row justify-content-center p-5">
                 <div class="col-8">
-                    <ul v-cloak>
+                    <ul v-if="emailList.length === 10">
                         <li v-for="email in emailList">{{email.response}}</li>
                     </ul>
                 </div>
